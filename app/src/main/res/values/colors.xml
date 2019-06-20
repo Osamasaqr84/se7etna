@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E5F83</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#62a1d8</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff808080</color>
+    <color name="black">#000</color>
+    <color name="viewcolor">#EDF0F2</color>
+    <color name="textcolorinnenu">#ff808080</color>
+    <color name="starcount">#ff808080</color>
+    <color name="grey">#4A4A4A</color>
+    <color name="pink">#E6EAED</color>
+    <color name="red">#ef1919</color>
+    <color name="shape">#E6EAED</color>
+    <color name="blue">#1e75de</color>
+    <color name="fbcolor">#4A70B7</color>
+    <color name="text_blue">#2F7BBF</color>
+    <color name="slider_home3">#490D39</color>
+    <color name="back_home3">#FCF6F6</color>
+    <color name="notfy_home3">#DC214C</color>
+    <color name="text_numbers">#DC214C</color>
+    <color name="colortwo">#DC214C</color>
+    <color name="colorbackinorderconf">#D91368</color>
+    <color name="maptextcolor">#D91368</color>
+    <color name="darkgrey">#514F4F</color>
+    <color name="lightPurple">#D482DF</color>
+    <color name="chatbackforsender">#E7EBEE</color>
+    <color name="chatback">#FBF5F5</color>
+    <color name="backhome">#FdF3F6</color>
+    <color name="backinstores">#3D002A</color>
+    <color name="backinsendmessage">#E6EAEB</color>
+    <color name="lightergrey">#E6EAEB</color>
+    <color name="lightestgrey">#DBDDDD</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="seperatorgrey">#979797</color>
+    <color name="light_gray">#DEDEDE</color>
+    <color name="menu_item_back">#e6eaed</color>
+    <color name="lightgreen">#6FBF18</color>
+    <color name="red2">#FF0800</color>
+    <color name="darkgreen">#7e9662</color>
+    <color name="darkred">#8c2e48</color>
+    <color name="yellow">#FABE10</color>
+    <color name="signinpurple">#67236C</color>
+    <color name="gold">#DAA520</color>
+    <color name="etblue">#149aed</color>
+    <color name="lightgrey">#e6eaed</color>
+
+    <color name="view_back">#E7EBEE</color>
+
+
+
+
+
+</resources>

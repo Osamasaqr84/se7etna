@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="nested">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/state"
+            app:layout_constraintTop_toBottomOf="@+id/state">
+
+
+            <ImageView
+                android:id="@+id/removeListR4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="1dp"
+                android:padding="4dp"
+                android:src="@drawable/telephone"
+
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/guide4"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guide3"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <ImageView
+                android:id="@+id/removeListR3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+
+                android:elevation="1dp"
+                android:padding="4dp"
+                android:src="@drawable/world"
+                android:visibility="visible"
+
+                app:layout_constraintBottom_toTopOf="@+id/guide3"
+                app:layout_constraintHeight_percent="0.14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guide2"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <ImageView
+                android:id="@+id/removeListR2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:elevation="1dp"
+
+                android:padding="4dp"
+                android:src="@drawable/clock"
+                android:visibility="visible"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/guide2"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guide1"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.17" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.31" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.48" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.62" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:background="@color/gray"
+                app:layout_constraintTop_toTopOf="@id/guide1" />
+
+            <ImageView
+                android:id="@+id/removeListR"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:elevation="1dp"
+                android:padding="7dp"
+                android:src="@drawable/map_marker"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/guide1"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="1dp"
+                android:padding="3dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical|right"
+                android:text="عدنان مسقط عمان"
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guide1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/removeListR"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toTopOf="@id/guide2" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:padding="7dp"
+                android:text="مفتوح"
+                android:textColor="@color/lightgreen"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guide2"
+                app:layout_constraintStart_toEndOf="@+id/removeListR2"
+                app:layout_constraintTop_toTopOf="@+id/guide1" />
+
+
+            <TextView
+                android:id="@+id/state2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/guide2"
+                app:layout_constraintStart_toEndOf="@+id/state"
+                app:layout_constraintTop_toTopOf="@+id/guide1" />
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="1dp"
+                android:padding="7dp"
+                android:text="3 pm"
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guide2"
+                app:layout_constraintStart_toEndOf="@+id/state2"
+                app:layout_constraintTop_toTopOf="@+id/guide1" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@+id/website"
+                app:layout_constraintStart_toStartOf="@+id/website"
+                app:layout_constraintTop_toBottomOf="@+id/state" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="right"
+                android:padding="6dp"
+                android:text="غير متاح"
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guide3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/removeListR3"
+                app:layout_constraintTop_toTopOf="@+id/guide2" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@+id/mail"
+                app:layout_constraintStart_toStartOf="@+id/mail"
+                app:layout_constraintTop_toBottomOf="@+id/website" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="right"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/guide4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/removeListR4"
+                app:layout_constraintTop_toTopOf="@+id/guide3" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@id/guide3" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@id/guide4" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/gray"
+                app:layout_constraintBottom_toTopOf="@id/removeListR" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

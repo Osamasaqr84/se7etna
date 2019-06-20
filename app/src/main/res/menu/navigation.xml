@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/discover"
+        android:icon="@drawable/maps"
+        android:title="@string/discoverr" />
+
+    <item
+        android:id="@+id/favorit"
+        android:icon="@drawable/bookmark"
+        android:title="@string/favorit" />
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/more" />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    xmlns:Tool="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.details.posts.PostsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/posts_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        Tool:layout_constraintTop_toTopOf="parent"
+        android:tag="nested"
+        />
+
+    <TextView
+        android:id="@+id/notfound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        Tool:layout_constraintStart_toStartOf="parent"
+        Tool:layout_constraintEnd_toEndOf="parent"
+        Tool:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        Tool:layout_constraintBottom_toBottomOf="parent"
+        android:text="لا يوجد منشورات لهذا المركز "
+        />
+
+
+</android.support.constraint.ConstraintLayout>

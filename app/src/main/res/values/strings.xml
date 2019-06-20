@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">صحتنا</string>
+    <string name="discover">أكتشف الاقرب اليك</string>
+    <string name="pharms">صيدليات</string>
+
+    <string name="google_maps_key">AIzaSyDPa2J9AKnxyYTcKTUzH3rmFqiXTIezXuM</string>
+    <string name="discoverr">اكتشف</string>
+    <string name="favorit">مفضلتي</string>قثله
+    <string name="more">مزيد</string>
+    <string name="searchabout"> ابحث عن مركزك الصحي</string>
+    <string name="write_comment">اكتب تعليقك</string>
+    <string name="posts">منشورات</string>
+
+    <string name="details">تفاصيل</string>
+
+    <string name="phots">صور</string>
+
+    <string name="directions">اتجاهات</string>
+
+    <string name="rates">تقييمات</string>
+
+    <string name="set_rate">ضع تقييمك للمركز</string>
+    <string name="error_occure">خطأ. حاول مرة اخري</string>
+
+    <string name="complete">الرجاء اكمال البيانات</string>
+    <string name="passworsnotmatch">كلمتا المرور غير متطابقتان</string>
+    <string name="register">تسجيل</string>
+    <string name="registersuccess">تم التجسيل بنجاح برجاء تفعيل من خلال الايميل</string>
+    <string name="error_tryagani">خطأ,حاول مرة اخري</string>
+    <string name="title">تسجيل الدخول</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="loout">تسجيل الخروج</string>
+    <string name="password">كلمة المرور</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="newuser">تسجيل مستخدم جديد</string>
+    <string name="repassword">تأكيد كلمة المرور</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="nothaveaccount">ليس لديك حساب . التسجيل الان</string>
+    <string name="hello">مرحبا</string>
+    <string name="youlogout">تم تسجيل خروجك</string>
+    <string name="aboutapp">عن التطبيق</string>
+    <string name="myreservation">حجوزاتي</string>
+    <string name="wait">انتظر ...</string>
+    <string name="mail">البريد الالكتروني</string>
+    <string name="notvalideemail">الايميل غير صحيح</string>
+    <string name="noposts">لا يوجد منشورات</string>
+
+</resources>

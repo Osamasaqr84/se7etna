@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardManadeebRep"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineright2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.83" />
+
+        <TextView
+            android:id="@+id/verbalState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="8dp"
+            android:text="يغلق"
+            android:textColor="#6e7079"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/time3"
+            app:layout_constraintTop_toTopOf="@+id/time3" />
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+
+            android:padding="1dp"
+            android:text="-"
+            android:textColor="#6e7079"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/state"
+            app:layout_constraintTop_toTopOf="@+id/state" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:gravity="start"
+            android:maxLines="5"
+            android:padding="1dp"
+            android:text="مفتوح"
+            android:textColor="@color/lightgreen"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/hosType"
+            app:layout_constraintTop_toBottomOf="@+id/adress"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mainpageimage"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:maxLines="3"
+            android:text="مستشفي السلام الدولي"
+            android:textColor="@color/black"
+            android:fontFamily="@font/droidnaskh_regular"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+             />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/StarRatingBars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:rating="1"
+            android:layout_marginTop="3dp"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <TextView
+            android:id="@+id/rate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="(120)"
+            android:textColor="@color/starcount"
+            android:textSize="12dp"
+            app:layout_constraintTop_toTopOf="@+id/rating"
+            app:layout_constraintBottom_toBottomOf="@+id/rating"
+            app:layout_constraintStart_toEndOf="@id/rating"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivRoute"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="2dp"
+            android:src="@drawable/directions"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineright2"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/adress"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivPhone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="2dp"
+            android:src="@drawable/phone"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineright2"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/adress"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivFavN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="4dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@drawable/fav_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.08" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivFav"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="4dp"
+            android:padding="2dp"
+            android:src="@drawable/fav"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.08" />
+
+
+        <TextView
+            android:id="@+id/hosType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"
+            android:maxLines="5"
+            android:text="مستشفى جراحة "
+            android:textColor="#a0a1ab"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/rating"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="8dp"
+            android:gravity="right"
+            android:maxLines="3"
+            android:text="مستشفى م ج "
+            android:textColor="#a0a1ab"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineright"
+            app:layout_constraintStart_toStartOf="@+id/hosType"
+            app:layout_constraintTop_toBottomOf="@+id/hosType"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="2dp"
+            android:text="km  5"
+            android:textColor="#6e7079"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/adress"
+            app:layout_constraintStart_toEndOf="@+id/time2"
+            app:layout_constraintTop_toTopOf="@+id/time2" />
+
+        <TextView
+            android:id="@+id/time5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="pm  5"
+            android:textColor="#6e7079"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/verbalState"
+            app:layout_constraintTop_toTopOf="@+id/verbalState" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="1dp"
+            android:text="-"
+            android:textColor="#6e7079"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/adress"
+            app:layout_constraintStart_toEndOf="@+id/hosType"
+            app:layout_constraintTop_toTopOf="@+id/hosType" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

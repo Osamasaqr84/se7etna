@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/gold</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>
+
+    <style name="StarRatingBars" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/starsdr</item>
+        <item name="android:progressDrawable">@drawable/starsdr</item>
+
+    </style>
+    <style name="StarRatingBars2" parent="Widget.AppCompat.RatingBar">
+        <item name="android:indeterminateDrawable">@drawable/starsdr</item>
+        <item name="android:progressDrawable">@drawable/starsdr</item>
+
+    </style>
+
+    <style name="MyButton" parent="android:Widget.Material.Button" tools:targetApi="lollipop">
+        <item name="android:textColor">#149aed</item>
+        <item name="colorButtonNormal">#020e39</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/edterr</item>
+
+    </style>
+</resources>

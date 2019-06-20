@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layoutDirection="rtl">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=""
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/group"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:text="اسم المركز "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="@style/StarRatingBars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:isIndicator="true"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <TextView
+        android:id="@+id/rate_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/gray"
+        android:text="()"
+        android:textSize="9dp"
+        app:layout_constraintStart_toEndOf="@id/rating"
+        app:layout_constraintTop_toTopOf="@+id/rating"
+        app:layout_constraintBottom_toBottomOf="@+id/rating"
+        />
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="right"
+        android:maxLines="5"
+        android:padding="3dp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/post_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toBottomOf="@+id/postText" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="7dp"
+        android:visibility="gone"
+        android:background="@color/seperatorgrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineright"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/delimiterD"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+    <View
+        android:id="@+id/verView"
+        android:layout_width="0.3dp"
+        android:layout_height="30dp"
+        android:background="@color/view_back"
+        app:layout_constraintBottom_toBottomOf="@id/delimiterD"
+        app:layout_constraintEnd_toEndOf="@+id/vertGui1"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintTop_toTopOf="@+id/comment" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertGui1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/like"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:paddingStart="15dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toStartOf="@+id/comment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_images"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <View
+        android:id="@+id/delimiter"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/view_back"
+        app:layout_constraintBottom_toTopOf="@+id/like" />
+
+    <View
+        android:id="@+id/delimiterD"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/view_back"
+        app:layout_constraintTop_toBottomOf="@+id/like" />
+
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/comment"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:paddingStart="15dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertGui1"
+        app:layout_constraintTop_toBottomOf="@id/post_images"
+        app:layout_constraintWidth_percent="0.3" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelinecomments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+</android.support.constraint.ConstraintLayout>
+
